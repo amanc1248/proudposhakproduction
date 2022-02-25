@@ -1,0 +1,22 @@
+.about__us__content__container {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: left;
+  padding-bottom: 70px;
+  padding-top: 93px;
+}
+.about__us__content {
+  font-family: Times New Roman, "Times New Roman", Times, Baskerville, Georgia,
+    serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: 25px;
+  color: #000;
+}
+@media screen and (max-width: 820px) {
+  .about__us__content__container {
+    padding: 35px 20px;
+  }
+}

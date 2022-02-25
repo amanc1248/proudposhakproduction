@@ -1,0 +1,116 @@
+.website__footer {
+  background-color: #154c9a;
+}
+.firstSectionFooter {
+  padding: 1em 1em !important;
+  text-align: left;
+  font-size: 14px;
+}
+.emailSignUpTitle,
+.followUsTitle {
+  /* font-family: "Noto Sans JP", sans-serif; */
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5em;
+  color: white;
+}
+.socialIcon {
+  font-size: larger !important;
+  margin-right: 30px !important;
+  color: white;
+}
+.footerPadding {
+  padding: 0 0.5em 0 0;
+  color: white;
+}
+.secondSectionFooter {
+  padding: 1em 2em 2em 1em !important;
+}
+.followUsLinks,
+.additionalInformationLinks {
+  padding-bottom: 2em;
+  font-size: 14px;
+}
+.input-group-prepend {
+  height: fit-content;
+  margin-top: 15px;
+}
+.footer__links__container {
+  text-align: left;
+  margin: 10px 0;
+}
+.footer__link {
+  color: white;
+
+  font-size: smaller;
+  margin-bottom: 8px !important;
+}
+.footer__link:hover,
+.socialIcon:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #0c88ef;
+}
+
+@media screen and (max-width: 1000px) {
+  .secondSectionFooter {
+    /* background-color: ; */
+  }
+  .followUsLinks,
+  .additionalInformationLinks {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  .middle__links__container {
+    padding-bottom: 1em;
+  }
+  .footer__image {
+    /* width: 20%; */
+    /* height: 10vh; */
+  }
+}
+#Link {
+  text-decoration: none;
+}
+.get__started__tailor {
+  border: solid white 2px;
+  height: 50px;
+  color: black;
+
+  width: 100%;
+  background-color: white;
+}
+.footer__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.order__image__footer {
+  height: 100%;
+}
+.track__order__button {
+  border: solid white 2px;
+  height: 50px;
+  color: black;
+
+  width: 100%;
+  background-color: white;
+}
+.payment__methods__footer {
+  text-align: left;
+  color: white;
+}
+.payment__gateway__image {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.payment__gateways__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+@media screen and (max-width: 600px) {
+  .payment__gateway__image {
+    height: 30px;
+  }
+}

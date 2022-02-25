@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+.thuloDiv {
+  width: 270px;
+  border-radius: 10px;
+  border-style: hidden;
+  position: fixed;
+  bottom: 15%;
+  left: 1%;
+  z-index: 99;
+  animation-name: loginAni;
+  animation-duration: 0.5s;
+  box-shadow: 0 0 10px rgb(187, 183, 183);
+}
+@keyframes loginAni {
+  from {
+    bottom: 50px;
+  }
+  to {
+    bottom: 95px;
+  }
+}
+
+.mediumDiv {
+  height: 175px;
+  background: #f0f0f0;
+  border-radius: 8px 8px 0 0;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.seconddiv {
+  text-align: center;
+  font-size: 14px;
+  background-color: white !important;
+  border-radius: 8px;
+}
+.questiondiv {
+  text-align: left;
+  /* margin-left: 10px; */
+  background-color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 50px;
+}
+.talk__to__us {
+  text-align: center;
+  font-weight: 700;
+}
+
+.chatting__boxes {
+  background: white;
+  padding: 8px 20px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 8px 8px;
+}
+.chatting__box__div {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgba(0, 0, 0, 0.186);
+  border-radius: 8px;
+  margin: 7px 0;
+  padding: 5px 5px;
+  background-color: white;
+  cursor: pointer;
+}
+.chatting__box__div:hover {
+  background-color: #def0f5;
+}
+.open__message__div {
+  background-color: #def0f5;
+  width: max-content;
+  padding: 5px 15px;
+
+  border: 3px solid white;
+  border-radius: 28px;
+  position: fixed;
+  bottom: 5%;
+  left: 1%;
+  z-index: 1000;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+.the__emoji__hand {
+  color: blue;
+  font-size: 30px;
+  animation-name: the__emoji__hand_ani;
+  animation-iteration-count: infinite;
+  animation-duration: 0.1s;
+}
+@keyframes the__emoji__hand_ani {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+}

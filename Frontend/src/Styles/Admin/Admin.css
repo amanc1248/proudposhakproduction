@@ -1,0 +1,144 @@
+.add__product__type {
+  /* display: flex; */
+  background-color: rgba(128, 128, 128, 0.152);
+}
+.add__product__type__container {
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  text-align: left;
+  /* padding: 20px 0; */
+  margin: 20px auto;
+  background-color: white;
+}
+.add__product__type__header {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+@media screen and (min-width: 767px) {
+  .add__product__type__container {
+    width: 500px;
+  }
+  .attribute__adding__box {
+    width: 95%;
+    margin: auto;
+  }
+}
+.normal__div__1 {
+  padding: 10px 20px;
+  width: 100%;
+}
+.attribute__table,
+.dependent__attribute__table__container {
+  padding: 10px 20px;
+}
+.align__button__container {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+.align__button {
+  height: 40px;
+  background-color: #a37dfe;
+  margin: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+.save__cancel__button__container {
+  display: flex;
+  justify-content: space-around;
+}
+.save__button,
+.cancel__button {
+  border-radius: 10px;
+  padding: 5px 6px;
+  margin: 5px;
+  width: 100%;
+  color: white;
+}
+.save__button {
+  background-color: #8a59fc;
+}
+.cancel__button {
+  background-color: #c82333;
+}
+.input__box__1 {
+  width: 100% !important;
+}
+.select__box__1 {
+  width: 100%;
+}
+.attribute__adding__box {
+  font-size: 12px;
+  border: 1px solid black;
+  width: 70%;
+  margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .attribute__adding__box {
+    width: 95%;
+  }
+}
+/* attribute value container css */
+.choosed__selecting__value__container {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: auto;
+}
+.the__choosed__selected__value__box {
+  display: flex;
+}
+.choosed__selected__value__edit__delete {
+  background: none;
+  color: #8a59fc;
+  font-weight: 800;
+  border: none;
+  margin: 0px 10px;
+}
+.choosed__selecting__value__container__value {
+  border: 1px solid rgba(0, 0, 0, 0.364);
+  color: rgba(0, 0, 0, 0.761);
+  margin: 5px;
+  width: fit-content;
+  padding: 5px;
+}
+.value__adding__container {
+  /* display: flex; */
+  margin: 10px;
+  border: 1px solid black;
+}
+.add__value__button {
+  background: none;
+  border: none;
+  color: #8a59fc;
+  font-weight: 900;
+}
+
+.save__product__type__button__container {
+  padding: 10px 20px;
+}
+.save__product__type__button {
+  background: #a37dfe;
+  border: none;
+  color: white;
+
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* EDIT PRODUCT TYPE CSS */
+.edit__delete__button__container {
+  display: flex;
+}
+.edit__delete__button {
+  padding: 5px 8px;
+  color: #8a59fc;
+  cursor: pointer;
+}
