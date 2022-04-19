@@ -352,59 +352,6 @@ export function PlaceOrder({ history }) {
   const { userInfo } = userLogin;
   const { shippingAddress, paymentMethod } = processToOrder;
 
-  const bankTransferMethod = (
-    <>
-      <h5>
-        Bank Transfer: Rastra Banijya bank{" "}
-        <AccountBalanceIcon></AccountBalanceIcon>
-      </h5>
-      <div className="pay__method__explanation">
-        Pay Just 25% of total price now, <br />
-        Bank Name: Rastriya Banijya Bank Ltd. <br />
-        Branch Office: Duhabi <br />
-        A/C No.: 2340100002738010 <br /> Account Holder: Aman Chaudhary
-      </div>
-    </>
-  );
-  const khaltiMethod = (
-    <>
-      <h5>
-        khalti money transfer
-        <img src="images/Khalti_logo.png" alt="" height="30px" />
-      </h5>
-      <div className="pay__method__explanation">
-        Khalti: at <strong>9804355969</strong> <br /> (enter this in the khalti
-        id when you're to send the amount) to activate your order.
-        <br />
-        enter this to your remarks:{" "}
-        <strong> Proudposhak order from orderid: yourOrderId </strong>
-      </div>
-    </>
-  );
-  const eSewaMethod = (
-    <>
-      <h5>
-        {" "}
-        eSewa wallet transfer{" "}
-        <img src="images/esewapng.png" alt="" height="30px" />
-      </h5>
-      <div className="pay__method__explanation">
-        eSewa: at <strong>9804355969</strong> <br /> (enter this in the eSewa id
-        when you're to send the amount) to activate your order.
-        <br />
-        enter this to your remarks:{" "}
-        <strong> Proudposhak order from orderid: yourOrderId </strong>
-      </div>
-    </>
-  );
-  const cashOnDeliveryMethod = (
-    <>
-      <h5>cash on delivery</h5>
-      <div className="pay__method__explanation">
-        Pay cash when the order is delivered at your location
-      </div>
-    </>
-  );
   const orderCreate = useSelector((state) => state.orderCreate);
   const { order, success, loading } = orderCreate;
   const theMainOrderId = order && order["theMainOrderId"];

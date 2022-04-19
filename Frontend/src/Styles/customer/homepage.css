@@ -29,12 +29,12 @@
   transform: translate(-50%, -50%);
 }
 .category__button {
-  border: none;
-  background-color: white;
+  border: solid 3px white;
+  background-color: #2d5ea4;
   border-radius: 4px;
   padding: 8px 20px;
   margin: 10px 15px;
-  color: black;
+  color: white;
   font-size: 16px;
   font-weight: 700;
 }
@@ -48,7 +48,6 @@
     width: 100%;
     padding: 15px 20px;
     margin: 10px 15px;
-    color: black;
     font-size: 16px;
     font-weight: 700;
   }

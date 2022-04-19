@@ -4,10 +4,8 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import ChevronLeftOutlinedIcon from "@mui/icons-material/ChevronLeftOutlined";
 import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 import { useDispatch, useSelector } from "react-redux";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 import "../../Styles/ProductScreen/ProductScreen.css";
 import {
-  ProductImagesClass,
   ProductDetailsClass,
   ProductTypeClass,
   ProductAttributesClass,
@@ -19,12 +17,7 @@ import { addToCart } from "../../actions/cartActions";
 import Loader from "../../components/Loader";
 import CustomerCart from "../CustomerAccount/CustomerCart";
 import Message from "../../components/Message";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useParams,
-} from "react-router-dom";
+import { useParams } from "react-router-dom";
 function ProductScreen() {
   let { productId } = useParams();
 
@@ -36,7 +29,7 @@ function ProductScreen() {
   const productScreenProductDetails = useSelector(
     (state) => state.productScreenProductDetails
   );
-  const { loading, error, productScreenDetails } = productScreenProductDetails;
+  const { loading, productScreenDetails } = productScreenProductDetails;
   const allProductDetails = productScreenDetails && productScreenDetails[0];
   const allProductTypesDetails =
     productScreenDetails && productScreenDetails[2];
