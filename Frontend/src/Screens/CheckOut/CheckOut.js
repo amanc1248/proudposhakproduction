@@ -371,6 +371,11 @@ export function PlaceOrder({ history }) {
     });
     return theTotalPrice;
   };
+  let initialQuantity = 0;
+  const sumWithInitial = cartItems.reduce(
+    (previousValue, currentValue) => previousValue + currentValue.quantity,
+    initialQuantity
+  );
 
   // adding order details to order array function
   const addingOrderDetailsFunction = () => {
@@ -439,7 +444,7 @@ export function PlaceOrder({ history }) {
 
       <div className="checkout__choosed__field">
         <div className="checkout__choosed__field__title">QUANTITY,</div>
-        <div className="checkout__choosed__field__value">"quantity"</div>
+        <div className="checkout__choosed__field__value">{sumWithInitial}</div>
         <div className="checkout__choosed__field__Icon">
           <CheckCircleIcon className="check__circle__icon"></CheckCircleIcon>
         </div>
