@@ -7,8 +7,6 @@ import "../../Styles/components/Footer.css";
 import { useNavigate } from "react-router-dom";
 
 function Footer() {
-  let navigate = useNavigate();
-
   return (
     <div className="">
       <div className="website__footer  no-gutters">

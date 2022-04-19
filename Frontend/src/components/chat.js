@@ -1,14 +1,13 @@
-import React, { useState, Component } from "react";
+import React, { useState } from "react";
 import "../Styles/components/Chat.css";
-import { useDispatch, useSelector } from "react-redux";
-import { MdWavingHand } from "react-icons/md";
+import { useSelector } from "react-redux";
 function Chat() {
   const [showHideChat, setShowHideChat] = useState(false);
   const showChatFunction = () => {
     setShowHideChat(!showHideChat);
   };
   const userLogin = useSelector((state) => state.userLogin);
-  const { loading, error, userInfo } = userLogin;
+  const { userInfo } = userLogin;
 
   const theMessageDiv = (
     <div>

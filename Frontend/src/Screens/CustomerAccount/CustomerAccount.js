@@ -11,7 +11,7 @@ function CustomerAccount() {
   let navigate = useNavigate();
 
   const userLogin = useSelector((state) => state.userLogin);
-  const { loading, error, userInfo } = userLogin;
+  const { userInfo } = userLogin;
   const dispatch = useDispatch();
   const [value, setValue] = useState(0);
   const theData = [{ title: "Orders" }, { title: "Account Details" }];

@@ -23,7 +23,7 @@ function Header() {
   };
 
   const userLogin = useSelector((state) => state.userLogin);
-  const { loading, error, userInfo } = userLogin;
+  const {  userInfo } = userLogin;
   const dispatch = useDispatch();
 
   // check if user is logged in

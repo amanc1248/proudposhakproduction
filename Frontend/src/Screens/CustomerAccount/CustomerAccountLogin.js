@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import ReactDOM from "react-dom";
-import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
 import GoogleLogin from "react-google-login";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
@@ -49,22 +47,9 @@ function CustomerAccountLogin({
   let navigate = useNavigate();
   const [showHideLoginSuccessContainer, setShowHideLoginSuccessContainer] =
     useState(false);
-  const showLoginSuccessContainer = () => {
-    setShowHideLoginSuccessContainer(true);
-  };
-  const hideLoginSuccessContainer = () => {
-    setShowHideLoginSuccessContainer(false);
-  };
 
-  const componentClicked = () => {
-    console.log("clicked");
-  };
-  const responseFacebook = (response) => {
-    console.log(response);
-  };
   // states for the user
-  const [email, setEmail] = useState();
-  const [name, setName] = useState();
+
   const responseGoogle = (response) => {
     console.log("=======google response=============================");
     console.log(response);
@@ -88,7 +73,7 @@ function CustomerAccountLogin({
     //   );
   };
   const userLogin = useSelector((state) => state.userLogin);
-  const { loading, error, userInfo } = userLogin;
+  const { userInfo } = userLogin;
   const dispatch = useDispatch();
 
   useEffect(() => {

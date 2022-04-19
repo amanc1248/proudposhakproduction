@@ -17,7 +17,7 @@ function CustomerCart({ hideCustomerCartFunc }) {
   let navigate = useNavigate();
 
   const userLogin = useSelector((state) => state.userLogin);
-  const { loading, error, userInfo } = userLogin;
+  const { userInfo } = userLogin;
   const dispatch = useDispatch();
 
   // product categories

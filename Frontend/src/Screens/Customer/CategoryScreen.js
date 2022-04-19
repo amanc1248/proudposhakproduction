@@ -4,12 +4,7 @@ import ProductContainer from "../../components/ProductContainer";
 import "../../Styles/customer/categoryScreen.css";
 import { useDispatch, useSelector } from "react-redux";
 import { categoryProductDetailsAction } from "../../actions/productActions";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useParams,
-} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function CategoryScreen() {

@@ -2,12 +2,7 @@ import React, { useEffect } from "react";
 import HeaderSpacer from "../../components/HeaderSpacer";
 import ProductContainer from "../../components/ProductContainer";
 import "../../Styles/customer/UniqueProductScreen.css";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useParams,
-} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { subCategoryProductDetailsAction } from "../../actions/productActions";
 
@@ -16,7 +11,6 @@ function UniqueProductScreen() {
 
   const subCategoryProducts = useSelector((state) => state.subCategoryProducts);
   const { subCategoryProductDetails } = subCategoryProducts;
-  const state = useSelector((state) => state.state);
 
   const dispatch = useDispatch();
   useEffect(() => {

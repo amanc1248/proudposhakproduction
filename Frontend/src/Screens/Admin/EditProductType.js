@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "../../Styles/Admin/Admin.css";
 import { Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { adminProductTypeDetailsReducer } from "../../reducers/adminReducers";
 import { adminGetProductTypeDetails } from "../../actions/adminActions";
 
 function EditProductType() {
@@ -12,7 +11,7 @@ function EditProductType() {
   const adminProductTypeDetails = useSelector(
     (state) => state.adminProductTypeDetails
   );
-  const { loading, productTypeDetailsInfo } = adminProductTypeDetails;
+  const { productTypeDetailsInfo } = adminProductTypeDetails;
 
   useEffect(() => {
     if (!productTypeDetailsInfo) {

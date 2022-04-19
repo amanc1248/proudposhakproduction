@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function CustomerOrders() {
   const orderListMy = useSelector((state) => state.orderListMy);
-  const { loading, error, orders } = orderListMy;
+  const { orders } = orderListMy;
   console.log("===my orders=======================");
   console.log(orders);
   console.log("====================================");

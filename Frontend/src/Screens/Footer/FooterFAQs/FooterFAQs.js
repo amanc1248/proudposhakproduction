@@ -40,10 +40,6 @@ function FooterFAQs() {
 export default FooterFAQs;
 function FAQContent({ title, thedata }) {
   // Expand all state👇
-  const [contentToogle, setContentToogle] = useState(false);
-  const contentToogling = () => {
-    setContentToogle(!contentToogle);
-  };
 
   function QuestionAnswer({ question, answer }) {
     const [answerToogle, setanswerToogle] = useState(true);

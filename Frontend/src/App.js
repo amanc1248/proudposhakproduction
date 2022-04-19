@@ -1,13 +1,6 @@
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useParams,
-} from "react-router-dom";
-import AddProductType from "./Screens/Admin/AddProductType";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import EditProductType from "./Screens/Admin/EditProductType";
 import HomePage from "./Screens/Customer/HomePage";
 import Header from "./components/Header";
 import CategoryScreen from "./Screens/Customer/CategoryScreen";

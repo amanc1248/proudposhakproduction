@@ -1,4 +1,3 @@
-import { color } from "@mui/system";
 import React, { useState } from "react";
 
 function ProductContainer({ id, name, image, price }) {

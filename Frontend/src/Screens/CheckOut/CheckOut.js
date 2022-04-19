@@ -2,14 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "../../Styles/CheckOut/checkout.css";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
-import { Link } from "react-router-dom";
 import PhoneInput from "react-phone-number-input/input";
 import { useNavigate } from "react-router-dom";
 import Message from "../../components/Message";
 
 import {
-  formatPhoneNumber,
-  formatPhoneNumberIntl,
   isPossiblePhoneNumber,
   isValidPhoneNumber,
 } from "react-phone-number-input";
@@ -19,7 +16,7 @@ import {
   savePaymentMethod,
   saveShippingAddress,
 } from "../../actions/cartActions";
-import { clearProcessToOrder, createOrder } from "../../actions/orderActions";
+import { createOrder } from "../../actions/orderActions";
 import Loader from "../../components/Loader";
 function CustomerCheckOutScreen({ history }) {
   let navigate = useNavigate();
@@ -49,8 +46,7 @@ function CustomerCheckOutScreen({ history }) {
   ];
 
   const userLogin = useSelector((state) => state.userLogin);
-  const { loading, error, userInfo } = userLogin;
-  const dispatch = useDispatch();
+  const { userInfo } = userLogin;
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
   console.log("cartItems" + cartItems);
@@ -102,7 +98,6 @@ function CustomerCheckOutScreen({ history }) {
 export default CustomerCheckOutScreen;
 
 export function CCPersonalDetails({ history, value }) {
-  const dispatch = useDispatch();
   const [firstName, setFirstName] = useState();
   const [lastName, setLastName] = useState();
   const [phone, setPhone] = useState();
@@ -170,7 +165,6 @@ export function CCShipping({ history, value }) {
   const [phone, setPhone] = useState();
   const [city, setCity] = useState("Biratnagar");
   const [street, setStreet] = useState();
-  const [deliveryPrice, setDeliveryPrice] = useState(0);
   const [message, setMessage] = useState();
   const [phoneNumberError, setPhoneNumberError] = useState();
   const cityChange = (e) => {
